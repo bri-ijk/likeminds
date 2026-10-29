@@ -46,9 +46,7 @@ I used an Agile methodology, with my project board linked [here](https://github.
 <!-- </details> -->
 
 <details>
-  <summary>
-1. **Contact Details**
-  </summary>
+  <summary>**Contact Details**</summary>
    - As a user, I want to easily find contact information so that I can reach out for support or inquiries
    - As a user, I want multiple ways to contact the platform (email, phone, address) for accessibility
    - Acceptance Criteria: Contact section visible in footer on all pages with email, phone, and physical address
