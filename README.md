@@ -39,11 +39,11 @@ I used an Agile methodology, with my project board linked [here](https://github.
 
 #### Must-Have Features (Implemented)
 
-<details>
-  <summary>
-  </summary>
-
-</details>
+<!-- <details> -->
+<!--   <summary> -->
+<!--   </summary> -->
+<!---->
+<!-- </details> -->
 
 <details>
   <summary>
