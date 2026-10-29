@@ -270,7 +270,7 @@ The dynamic portion of Likeminds uses Django to power club listings, detail page
 - **Templates** - Django template inheritance via `base.html`; Bootstrap-styled components throughout (`club_detail.html`, `my_clubs.html`). Navbar shows "My Clubs" only for authenticated users.
 - **Messages** - Django messages surface feedback for join/update/delete; site renders them as styled overlay alerts.
 
-## CRUD Features
+## CRUD (Create, Read, Update, Delete) Operations
 
 Likeminds implements full CRUD around clubs, with permissions and safe-guards:
 
@@ -302,15 +302,20 @@ Likeminds implements full CRUD around clubs, with permissions and safe-guards:
   - Logic: If `require_approval` is true, the user is added to `unapproved_members` and sees a "Request sent" message. Otherwise, they are added to `approved_members` and see a success message.
   - Duplicates: If already approved or pending, informative messages are shown without changing membership.
 
-These features are wired with Django's authentication checks, Bootstrap-styled templates, and clean URL routing to provide a cohesive, user-friendly experience.
+These features are wired with Django's authentication checks with Bootstrap-styled templates and clean URL routing.
 
 ## Deployment
 
-The project is deployed on **Heroku** using a PostgreSQL database and Cloudinary for media storage. Bootstrap and FontAwesome are served via CDN.
+The project is deployed on **[Heroku](https://www.heroku.com/)** using a PostgreSQL database and Cloudinary for media storage. Bootstrap and FontAwesome are served via CDN. The first deployment method is for Heroku. To deploy an app locally, see the "Getting Started (Django)" section below.
 
-The first deployment method is for Heroku. To deploy an app locally, see the "Getting Started (Django)" section below.
+### Method 1 - Heroku Deployment
 
-### Prerequisites
+<details>
+  <summary>
+Click for details.
+  </summary>
+
+#### Prerequisites
 
 - A [Heroku](https://heroku.com) account
 - The [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed (optional but useful)
@@ -401,11 +406,16 @@ heroku run python manage.py collectstatic --noinput
 7. Verify
 
 Visit your app at `https://your-app-name.herokuapp.com`. The `/clubs/` and `/admin/` routes should be functional once migrations and a superuser have been created.
+</details>
 
 ---
 
-## Getting Started (Django)
+### Method 2 - Local Django Deployment
 
+<details>
+  <summary>
+  Click for details.
+  </summary>
 Run the dynamic Django app locally:
 
 1. Prerequisites
@@ -415,7 +425,7 @@ Run the dynamic Django app locally:
 
 2. Setup
 
-```powershell
+```sh
 # From the project root
 python -m venv .venv; .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -432,14 +442,14 @@ pip install -r requirements.txt
 
 4. Run
 
-```powershell
+```sh
 python manage.py migrate
 python manage.py runserver
 ```
 
 5. Create superuser (optional, recommended for testing owner features)
 
-```powershell
+```sh
 python manage.py createsuperuser
 ```
 
@@ -453,34 +463,21 @@ python manage.py createsuperuser
    - Ensure `STATIC_URL` is configured; during local dev Django serves files automatically.
    - If using `collectstatic` for deployment:
 
-```powershell
+```sh
 python manage.py collectstatic --noinput
 ```
+
+</details>
 
 ## Use of AI
 
 AI tools were used throughout the development of Likeminds in a targeted, outcome-focused way rather than as a replacement for understanding.
 
-### Code creation & templating
-
-AI was used to accelerate the generation of boilerplate and structural code - for example, scaffolding Django views, URL patterns, and model definitions. This allowed more time to be spent on design decisions and feature logic rather than repetitive setup. All generated code was reviewed and adjusted to fit the project's specific requirements.
-
-### Debugging
-
-When bugs arose (such as issues with modal rendering or membership logic), AI was used as a fast first-pass diagnostic tool. It helped identify likely causes quickly, though the actual fixes always required manual verification and contextual judgement to ensure correctness within the wider codebase.
-
-### Code optimization & UX improvements
-
-AI suggestions were consulted when refining template structure and improving query efficiency (e.g. using `annotate` for member counts rather than hitting the database per-club). These optimizations contributed directly to a cleaner, more performant experience.
-
-### Automated testing
-
-AI (primarily GitHub Copilot) was used to generate the initial structure of Django unit tests, covering views, forms, and model logic. The generated tests provided a solid foundation, though they required review and adjustment - particularly around edge cases like the join/approval flow and owner-only access guards.
-
-### User story templating
-
-The user story format used throughout the project (As a..., I want..., Acceptance Criteria:) was templated with AI assistance, ensuring consistency across all stories and saving time on repetitive formatting work.
+- Code creation & templating: AI was used to accelerate the generation of boilerplate and structural code - for example, scaffolding Django views, URL patterns, model definitions, along with templating user stories. This allowed more time to be spent on design decisions and feature logic rather than repetitive setup. All generated code was reviewed and adjusted to fit the project's specific requirements.
+- Debugging: When bugs arose (such as issues with modal rendering or membership logic), AI was used as a fallback diagnostic tool. It helped identify likely causes quickly, though the actual fixes always required manual verification and contextual judgement to ensure correctness within the wider codebase.
+- Code optimization & UX improvements: AI suggestions were consulted when refining template structure and improving query efficiency (e.g. using `annotate` for member counts rather than hitting the database per-club). These optimizations contributed directly to a cleaner, more performant experience.
+- Automated testing: GitHub Copilot was used to generate the initial structure of Django unit tests, covering views, forms, and model logic. The generated tests provided a solid foundation, though they required review and adjustment - particularly around edge cases like the join/approval flow and admin-only views.
 
 ### Workflow reflection
 
-Overall, AI accelerated the development cycle most noticeably in the early structural phases and during testing. It worked best as a collaborator for well-defined tasks rather than open-ended design problems, where human judgement remained essential. The key outcome was a reduced time burden on mechanical tasks, freeing focus for the decisions that actually shaped the project.
+Overall, AI accelerated the development cycle most noticeably in the early structural phases and during testing. It worked best for well-defined tasks and troubleshooting, rather than open-ended design problems, where my own judgement was needed. The main benefit was a reduced time cost on low-complexity but necessary tasks, freeing focus for the decisions that actually shaped the project under the short deadline.
