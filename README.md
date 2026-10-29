@@ -40,76 +40,106 @@ I used an Agile methodology, with my project board linked [here](https://github.
 #### Must-Have Features (Implemented)
 
 <details>
-  <summary>Click to expand</summary>
+  <summary>
+  </summary>
 
 </details>
 
-1. **Contact Details**
-
 <details>
-  <summary>Click to expand</summary>
+  <summary>
+1. **Contact Details**
+  </summary>
    - As a user, I want to easily find contact information so that I can reach out for support or inquiries
    - As a user, I want multiple ways to contact the platform (email, phone, address) for accessibility
    - Acceptance Criteria: Contact section visible in footer on all pages with email, phone, and physical address
 </details>
 
+<details>
+  <summary>
 2. **About Page**
-
+  </summary>
    - As a new visitor, I want to understand what Likeminds is about so that I can determine if it meets my needs
    - As a STEM enthusiast, I want to know the platform's mission and values to see if it aligns with my goals
    - Acceptance Criteria: Dedicated about section explaining platform purpose, target audience, and benefits with supporting research
+</details>
 
+<details>
+  <summary>
 3. **Responsive Sizing**
-
+  </summary>
    - As a mobile user, I want the website to work perfectly on my device so that I can browse clubs on-the-go
    - As a user with different screen sizes, I want consistent functionality across all devices
    - Acceptance Criteria: Bootstrap responsive design working on mobile, tablet, and desktop with proper navigation collapse
+</details>
 
+<details>
+  <summary>
 4. **FAQ Page**
-
+  </summary>
    - As a new user, I want answers to common questions so that I can quickly understand how to use the platform
    - As a club organizer, I want guidance on best practices so that my club will be successful
    - Acceptance Criteria: Comprehensive FAQ section with accordion layout covering club creation, costs, management tips, and troubleshooting
+</details>
 
+<details>
+  <summary>
 5. **Club Viewing**
-
+  </summary>
    - As a STEM learner, I want to browse available clubs so that I can find ones that match my interests and schedule
    - As a user, I want to filter clubs by subject and difficulty level so that I can find the most relevant options
    - Acceptance Criteria: Clubs page with search functionality, subject filters, level filters, and paginated results showing club details
+</details>
 
+<details>
+  <summary>
 6. **Club Creation**
-
+  </summary>
    - As an educator/enthusiast, I want to create my own club so that I can lead discussions on topics I'm passionate about
    - As a club organizer, I want to specify all relevant details so that potential members know exactly what to expect
    - Acceptance Criteria: Multi-section form covering basic info, book/resources, schedule, settings, and organizer details with validation
+</details>
 
+<details>
+  <summary>
 7. **Signing Up**
-
+  </summary>
    - As a potential user, I want to sign up so I can access the rest of the site
    - Acceptance Criteria: A working signup page with Django allauth integration
      ![](https://i.imgur.com/jtgacQi.png)
+</details>
 
+<details>
+  <summary>
 8. **Error Page**
+  </summary>
    - As a user who encounters a broken link, I want helpful guidance so that I can continue using the site
    - As a visitor, I want error pages that maintain the site's design so that I feel confident in the platform's quality
    - Acceptance Criteria: Custom 404 page with helpful suggestions, navigation options, and consistent branding
+</details>
 
 #### Could-Have Features (Backlog)
 
+<details>
+  <summary>
 9. **Images and Branding**
-
+  </summary>
    - As a user, I want visually appealing graphics and consistent branding so that the platform feels professional and trustworthy
    - As a visual learner, I want icons and images to help me quickly understand different sections and features
+</details>
 
+<details>
+  <summary>
 10. **Events Section**
+  </summary>
     - As a community member, I want to participate in platform-wide events so that I can engage with the broader STEM learning community
     - As a club member, I want to see upcoming deadlines and special activities so that I can plan my participation
+</details>
 
 ---
 
 ## Early Wireframes
 
-As the project was coded and developed, the actual site changed a lot compared to the wireframe sketches, especially on the landing page.
+As the project was first starting, I created wireframes to visualize the layout and structure of the site. These wireframes were created using Balsalmiq and Figma Make, helping to guide the initial design decisions.
 
 - Mobile view
   ![](https://i.imgur.com/NytSaVb.png)
@@ -122,7 +152,7 @@ As the project was coded and developed, the actual site changed a lot compared t
 
 ![](https://i.imgur.com/fXcdKVz.png)
 
-Some choices were kept like the expanding line along the hero title, however this was too buggy on mobile, and so was only kept for larger screens.
+Some choices were kept like the expanding line along the hero title. However this appeared inconsistent on mobile resolutions, and so only displays on desktop screens.
 
 As Django was introduced into the project, I wireframed the _Club Details_ page using Figma Make in preparation for the dynamic content (pictured below).
 ![](https://i.imgur.com/k0nta9B.png)
@@ -131,14 +161,16 @@ As Django was introduced into the project, I wireframed the _Club Details_ page 
 
 ### Landing page
 
-Introduces Likeminds, stating its purpose and highlighting the platform's mission. Features a clean Bootstrap-powered design with intuitive navigation, hero section with call-to-action buttons, and a comprehensive features showcase using card layouts.
+Introduces Likeminds, stating its purpose and offering two immediate actions to get started (create or join a club). For logged out users, they will be prompted to create an account instead upon clicking either of the buttons. The rest of the landing page shows a clean Bootstrap design, with a hero section prompting call-to-action buttons and a comprehensive feature list using a card layout.
 
 ### Book Clubs
 
-- **Create** - Comprehensive club creation form with sections for basic information, book/resource details, scheduling, club settings, and organizer information
-- **Browse** - Search and filter functionality allowing users to find clubs by subject (Physics, Mathematics, Programming, Engineering, Biology, Chemistry) and difficulty level (Beginner to Graduate)
-- **Details** - Each club displays member count, meeting times, difficulty level, and detailed descriptions
-- **Customization** - Club organizers can set privacy levels, approval requirements, prerequisites, and member expectations
+The main feature of Likeminds is the ability to create and join book clubs, along with browsing currently available (i.e. public) ones.
+
+- **Create** - Comprehensive club creation form with key sections for basic information, book/resource details, scheduling, club settings, and organizer information.
+- **Browse** - Search and filter functionality allowing users to find clubs by subject (Physics, Mathematics, Programming, Engineering, Biology, Chemistry) and difficulty level (Beginner to Graduate).
+- **Details** - Each club displays member count, meeting times, difficulty level, and detailed descriptions.
+- **Customization** - Club organizers can set privacy levels, approval requirements, prerequisites, and member expectations.
 
 ### Newsletter System
 
