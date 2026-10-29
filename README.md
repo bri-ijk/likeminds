@@ -44,106 +44,54 @@ I used an Agile methodology, with my project board linked [here](https://github.
 <!--   </summary> -->
 <!---->
 <!-- </details> -->
-
 <details>
-<summary>
+<summary>Click to expand.</summary>
 
 1. **Contact Details**
-
-</summary>
 
 - As a user, I want to easily find contact information so that I can reach out for support or inquiries
 - As a user, I want multiple ways to contact the platform (email, phone, address) for accessibility
 - Acceptance Criteria: Contact section visible in footer on all pages with email, phone, and physical address
 
-</details>
-
-<details>
-<summary>
-
 2. **About Page**
-
-</summary>
 
 - As a new visitor, I want to understand what Likeminds is about so that I can determine if it meets my needs
 - As a STEM enthusiast, I want to know the platform's mission and values to see if it aligns with my goals
 - Acceptance Criteria: Dedicated about section explaining platform purpose, target audience, and benefits with supporting research
 
-</details>
-
-<details>
-<summary>
-
 3. **Responsive Sizing**
-
-</summary>
 
 - As a mobile user, I want the website to work perfectly on my device so that I can browse clubs on-the-go
 - As a user with different screen sizes, I want consistent functionality across all devices
 - Acceptance Criteria: Bootstrap responsive design working on mobile, tablet, and desktop with proper navigation collapse
 
-</details>
-
-<details>
-<summary>
-
 4. **FAQ Page**
-
-</summary>
 
 - As a new user, I want answers to common questions so that I can quickly understand how to use the platform
 - As a club organizer, I want guidance on best practices so that my club will be successful
 - Acceptance Criteria: Comprehensive FAQ section with accordion layout covering club creation, costs, management tips, and troubleshooting
 
-</details>
-
-<details>
-<summary>
-
 5. **Club Viewing**
-
-</summary>
 
 - As a STEM learner, I want to browse available clubs so that I can find ones that match my interests and schedule
 - As a user, I want to filter clubs by subject and difficulty level so that I can find the most relevant options
 
 - Acceptance Criteria: Clubs page with search functionality, subject filters, level filters, and paginated results showing club details
 
-</details>
-
-<details>
-<summary>
-
 6. **Club Creation**
-
-</summary>
 
 - As an educator/enthusiast, I want to create my own club so that I can lead discussions on topics I'm passionate about
 
 - As a club organizer, I want to specify all relevant details so that potential members know exactly what to expect
 - Acceptance Criteria: Multi-section form covering basic info, book/resources, schedule, settings, and organizer details with validation
 
-</details>
-
-<details>
-<summary>
-
 7. **Signing Up**
-
-</summary>
 
 - As a potential user, I want to sign up so I can access the rest of the site
 - Acceptance Criteria: A working signup page with Django allauth integration
   ![](https://i.imgur.com/jtgacQi.png)
 
-</details>
-
-<details>
-<summary>
-
 8. **Error Page**
-
-</summary>
 
 - As a user who encounters a broken link, I want helpful guidance so that I can continue using the site
 - As a visitor, I want error pages that maintain the site's design so that I feel confident in the platform's quality
@@ -154,23 +102,14 @@ I used an Agile methodology, with my project board linked [here](https://github.
 #### Could-Have Features (Backlog)
 
 <details>
-<summary>
+<summary>Click to expand.</summary>
 
 9. **Images and Branding**
-
-</summary>
 
 - As a user, I want visually appealing graphics and consistent branding so that the platform feels professional and trustworthy
 - As a visual learner, I want icons and images to help me quickly understand different sections and features
 
-</details>
-
-<details>
-<summary>
-
 10. **Events Section**
-
-</summary>
 
 - As a community member, I want to participate in platform-wide events so that I can engage with the broader STEM learning community
 - As a club member, I want to see upcoming deadlines and special activities so that I can plan my participation
@@ -353,11 +292,7 @@ The project is deployed on **[Heroku](https://www.heroku.com/)** using a Postgre
 ### Method 1 - Heroku Deployment
 
 <details>
-<summary>
-
-Click for details.
-
-</summary>
+<summary>Click to expand.</summary>
 
 #### Prerequisites
 
@@ -457,11 +392,8 @@ Visit your app at `https://your-app-name.herokuapp.com`. The `/clubs/` and `/adm
 ### Method 2 - Local Django Deployment
 
 <details>
-<summary>
+<summary>Click to expand.</summary>
 
-Click for details.
-
-</summary>
 Run the dynamic Django app locally:
 
 1. Prerequisites
