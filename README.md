@@ -2,7 +2,7 @@
 
 # Likeminds
 
-> A website dedicated to creating and organizing STEM-focused book clubs, designed to promote collaborative learning, discussion, and knowledge sharing.
+> A website dedicated to creating and organizing STEM-focused book clubs, designed to promote collaborative learning and knowledge sharing.
 
 You can access the site [here](https://likeminds-0e01746d78a8.herokuapp.com/)
 
@@ -29,22 +29,29 @@ You can access the site [here](https://likeminds-0e01746d78a8.herokuapp.com/)
 
 ## Project Overview
 
-Likeminds is a platform for learners, educators, and enthusiasts to form book clubs around STEM subjects.  
-The goal is to make learning collaborative and engaging by combining structured reading with interactive events like puzzles, challenges, and community spotlights.
+Likeminds is designed to be a social platform for learners, educators and enthusiasts to form reading groups and book clubs around STEM subjects. Ultimately, the goal is to make the process of learning more social and less isolating, along with streamlining the process of finding and joining clubs that match a user's interests and skill level.
 
 ## User Experience (UX)
 
 ### User Stories
 
-I used an Agile methodology, with my project board linked [here](https://github.com/users/brian2001dineen-afk/projects/10)
+I used an Agile methodology, with my project board linked [here](https://github.com/users/brian2001dineen-afk/projects/10).
 
 #### Must-Have Features (Implemented)
 
+<details>
+  <summary>Click to expand</summary>
+
+</details>
+
 1. **Contact Details**
 
+<details>
+  <summary>Click to expand</summary>
    - As a user, I want to easily find contact information so that I can reach out for support or inquiries
    - As a user, I want multiple ways to contact the platform (email, phone, address) for accessibility
    - Acceptance Criteria: Contact section visible in footer on all pages with email, phone, and physical address
+</details>
 
 2. **About Page**
 
@@ -117,39 +124,38 @@ As the project was coded and developed, the actual site changed a lot compared t
 
 Some choices were kept like the expanding line along the hero title, however this was too buggy on mobile, and so was only kept for larger screens.
 
-As Django was introduced into the project, some pages had to be made. I wireframed the Club details page using Figma Make:
-
+As Django was introduced into the project, I wireframed the _Club Details_ page using Figma Make in preparation for the dynamic content (pictured below).
 ![](https://i.imgur.com/k0nta9B.png)
 
 ## Features
 
 ### Landing page
 
-Introduces Likeminds, its purpose, and highlights the platform's mission of connecting STEM enthusiasts. Features a clean, Bootstrap-powered design with intuitive navigation, hero section with call-to-action buttons, and a comprehensive features showcase using modern card layouts.
+Introduces Likeminds, stating its purpose and highlighting the platform's mission. Features a clean Bootstrap-powered design with intuitive navigation, hero section with call-to-action buttons, and a comprehensive features showcase using card layouts.
 
 ### Book Clubs
 
-- **Create**: Comprehensive club creation form with sections for basic information, book/resource details, scheduling, club settings, and organizer information
-- **Browse**: Search and filter functionality allowing users to find clubs by subject (Physics, Mathematics, Programming, Engineering, Biology, Chemistry) and difficulty level (Beginner to Graduate)
-- **Details**: Each club displays member count, meeting times, difficulty level, and detailed descriptions
-- **Customization**: Club organizers can set privacy levels, approval requirements, prerequisites, and member expectations
+- **Create** - Comprehensive club creation form with sections for basic information, book/resource details, scheduling, club settings, and organizer information
+- **Browse** - Search and filter functionality allowing users to find clubs by subject (Physics, Mathematics, Programming, Engineering, Biology, Chemistry) and difficulty level (Beginner to Graduate)
+- **Details** - Each club displays member count, meeting times, difficulty level, and detailed descriptions
+- **Customization** - Club organizers can set privacy levels, approval requirements, prerequisites, and member expectations
 
 ### Newsletter System
 
-- **Signup Integration**: Newsletter modal accessible from footer on all pages
-- **Launch Notifications**: Dedicated signup page for early access notifications with interest-based preferences
-- **Privacy-Focused**: Clear consent mechanisms and unsubscribe options
+- **Signup Integration** - Newsletter modal accessible from footer on all pages
+- **Launch Notifications** - Dedicated signup page for early access notifications with interest-based preferences
+- **Privacy-Focused** - Clear consent mechanisms and unsubscribe options
 
 ### Navigation & User Experience
 
-- **Consistent Header**: Fixed navigation with active state indicators across all pages
-- **Smart Footer**: Comprehensive footer with quick links, contact information, and newsletter signup
-- **Error Handling**: Custom 404 page with helpful guidance and multiple pathways back to content
+- **Consistent Header** - Fixed navigation with active state indicators across all pages
+- **Smart Footer** - Comprehensive footer with quick links, contact information, and newsletter signup
+- **Error Handling** - Custom 404 page with helpful guidance and multiple pathways back to content
 
 ### Design Philosophy
 
-- **Clean Layout**: Focus on minimalism, prettiness and utility.
-- **Consistent Navigation**: Minimal navbar, with the feature to scroll back to it from the footer
+- **Clean Layout** - Focus on minimalism, prettiness and utility.
+- **Consistent Navigation** - Minimal navbar, with the feature to scroll back to it from the footer
 - **Color Scheme**:
   - Primary brand color: `#2b2724` (dark brown/charcoal)
   - Secondary color: `#37353b` (dark purple-gray)
@@ -174,52 +180,52 @@ Introduces Likeminds, its purpose, and highlights the platform's mission of conn
 
 ## Testing
 
-**Manual Testing**
+### Manual Testing
 
-- **Responsive Design**: Verified Bootstrap grid system works correctly across mobile (320px+), tablet (768px+), and desktop (1200px+) viewports
-- **Navigation**: Tested all navigation links, active states, and mobile hamburger menu functionality - no dead links found
-- **Forms**: Validated club creation form, newsletter signup, and launch notification signup with proper validation and user feedback
-- **Interactive Elements**: Confirmed pagination styling, search/filter functionality, and modal operations work as expected
-- **Cross-Page Consistency**: Verified consistent header, footer, and styling across all pages (index, clubs, create, signup, error)
+- **Responsive Design** - Verified Bootstrap grid system works correctly across mobile (320px+), tablet (768px+), and desktop (1200px+) viewports
+- **Navigation** - Tested all navigation links, active states, and mobile hamburger menu functionality - no dead links found
+- **Forms** - Validated club creation form, newsletter signup, and launch notification signup with proper validation and user feedback
+- **Interactive Elements** - Confirmed pagination styling, search/filter functionality, and modal operations work as expected
+- **Cross-Page Consistency** - Verified consistent header, footer, and styling across all pages (index, clubs, create, signup, error)
 
-**Browser Testing**
+### Browser Testing
 
-- **Firefox**: Full functionality
-- **Helium**: Works as expected, but may have unknown bugs as the browser is quite new
-- **Chrome**: Unsure, but since Helium is Chromium-based and in Alpha, it should also work
-- **Safari**: Unsure, but let me know!
+- **Firefox** - Fully functional
+- **Helium** - Works as expected, but may have unknown bugs as the browser is quite new and actively in development
+- **Chrome** - Fully functional
+- **Safari** - Unsure, awaiting testing on a Mac device
 
-**Validators**
+### Validators
 
-- **W3C HTML**: No issues
-- **W3C CSS**: Validation pending - custom stylesheet and Bootstrap overrides to be verified
-- **WCAG Accessibility**: 87%
-- **Lighthouse report**: ![](https://i.imgur.com/9U4hRoF.png)
+- **W3C HTML** - No issues
+- **W3C CSS** - Validation pending - custom stylesheet and Bootstrap overrides to be verified
+- **WCAG Accessibility** - 87%
+- **Lighthouse report** - ![](https://i.imgur.com/9U4hRoF.png)
 
 ---
 
 ## Future Enhancements
 
-- **Site load**: Optimize font loading and external platform requests for better performance and load times
-- **Accessibility**: Increase aria labelling of site content for those who are visually impaired
-- **Calendar Integration**: Sync club meeting schedules with popular calendar applications
-- **Progress Tracking**: Reading progress indicators and milestone achievements
+- **Site load** - Optimize font loading and external platform requests for better performance and load times
+- **Accessibility** - Increase aria labelling of site content for those who are visually impaired
+- **Calendar Integration** - Sync club meeting schedules with popular calendar applications
+- **Progress Tracking** - Reading progress updates and milestone achievements
 
 ## Technologies Used
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+), Django, Python 3.12.10
-- **Framework**: Bootstrap 5.3.8 for responsive design and components
-- **Icons**: FontAwesome 6.4.0 for consistent iconography
-- **Fonts**: Google Fonts (Source Sans 3, Computer Modern) with Fira Sans and Sans-Serif fallbacks
-- **Version Control**: Git with GitHub repository hosting
-- **Development**: VS Code with live server for local development, Neovim version 0.11.2
+- **Frontend** - HTML5, CSS3, JavaScript (ES6+), Django, Python 3.12.10
+- **Framework** - Bootstrap 5.3.8 for responsive design and components
+- **Icons** - FontAwesome 6.4.0 for consistent iconography
+- **Fonts** - Google Fonts (Source Sans 3, Computer Modern) with Fira Sans and Sans-Serif fallbacks
+- **Version Control** - Git with GitHub repository hosting
+- **Development** - VS Code with live server for local development, Neovim version 0.11.2
 
 ## Django Implementation
 
 The dynamic portion of Likeminds uses Django to power club listings, detail pages, and user actions. Key elements:
 
-- **Models**: A `Club` model captures organizer info, privacy settings (`is_private`, `require_approval`), membership lists (`approved_members`, `unapproved_members`), and rich content fields (briefing, prerequisites, expectations, schedule).
-- **Forms**: A `ClubForm` ModelForm provides a unified editing experience and renders with Crispy Forms (Bootstrap 5 template pack) inside a modal for owners.
+- **Models** - A `Club` model captures organizer info, privacy settings (`is_private`, `require_approval`), membership lists (`approved_members`, `unapproved_members`), and rich content fields (briefing, prerequisites, expectations, schedule).
+- **Forms** - A `ClubForm` ModelForm provides a unified editing experience and renders with Crispy Forms (Bootstrap 5 template pack) inside a modal for owners.
 - **Views**:
   - `ClubList` (class-based): Lists public clubs, annotated with `approved_count` for quick display.
   - `club_detail`: Shows a single club; if the viewer is the owner, includes the edit form/modal.
@@ -228,9 +234,9 @@ The dynamic portion of Likeminds uses Django to power club listings, detail page
   - `club_update`: Owner-only inline edits via the modal; returns messages on success/error.
   - `my_clubs`: Aggregates "Created", "Joined", and "Pending" clubs for the signed-in user.
   - `club_delete`: Owner-only deletion with a typed confirmation gate ("I understand"), then redirect to `my_clubs`.
-- **URLs**: Routes include `clubs/`, `create/`, `my-clubs/`, `join/<slug>/`, `update/<slug>/`, `delete/<slug>/`, and `/<slug>/` for details.
-- **Templates**: Django template inheritance via `base.html`; Bootstrap-styled components throughout (`club_detail.html`, `my_clubs.html`). Navbar shows "My Clubs" only for authenticated users.
-- **Messages**: Django messages surface feedback for join/update/delete; site renders them as styled overlay alerts.
+- **URLs** - Routes include `clubs/`, `create/`, `my-clubs/`, `join/<slug>/`, `update/<slug>/`, `delete/<slug>/`, and `/<slug>/` for details.
+- **Templates** - Django template inheritance via `base.html`; Bootstrap-styled components throughout (`club_detail.html`, `my_clubs.html`). Navbar shows "My Clubs" only for authenticated users.
+- **Messages** - Django messages surface feedback for join/update/delete; site renders them as styled overlay alerts.
 
 ## CRUD Features
 
